@@ -27,7 +27,7 @@
                                     <input type="text" class="form-control" v-model="storePassword">
                                 </div>
                                 <div class="form-group ms-3 mt-4">
-                                    <button type="button" class="btn btn-square btn-outline-warning"
+                                    <button type="button" class="btn btn-square btn-outline-success"
                                         v-for="(val,key) in title" :key="key" :id="val.id" @click="noteSave"><i
                                             class="fas fa-save"></i></button>
                                 </div>
@@ -94,7 +94,7 @@
         </div>
         <!-- Content End -->
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a> -->
     </div>
 </template>
   
