@@ -207,7 +207,7 @@ export default {
                         this.allUser.forEach((val) => {
                             this.permission.forEach((val1) => {
                                 if (val.id == val1.userID) {
-                                    console.log(val1.userID);
+                                    // console.log(val1.userID);
 
                                     this.usersWithAll.push({
                                         id: val.id,
@@ -222,7 +222,7 @@ export default {
                             });
                         });
                     }
-                    console.log(res.data);
+                    // console.log(res.data);
                 })
                 .catch(e => {
                     console.log(e);
