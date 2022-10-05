@@ -30,7 +30,7 @@
                 <div class="row g-4">
                     <div class="col-sm-6 col-xl-3" v-for="(val,key) in allTitle" :key="key">
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
-                            <h5>{{val.title}}</h5>
+                            <h5 class="text-primary">{{key+1}}.{{val.title}}</h5>
                             <div>
                                 <router-link :to="{name : 'showTitle' }" :id="val.id" @click="titleShow"><button
                                         type="button" class="btn btn-square btn-outline-success"><i

@@ -15,8 +15,8 @@
                     </div>
                 </div>
                 <div class="ms-3">
-                    <h6 class="mb-0">{{email}}</h6>
-                    <span>Admin</span>
+                    <h6 class="mb-0 text-primary">{{email}}</h6>
+                    <span class="text-warning"><b>admin</b></span>
                 </div>
             </div>
             <div class="navbar-nav w-100">

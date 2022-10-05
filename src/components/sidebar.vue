@@ -13,8 +13,8 @@
                     </div>
                 </div>
                 <div class="ms-3">
-                    <h6 class="mb-0">{{email}}</h6>
-                    <span>User</span>
+                    <h6 class="mb-0 text-primary">{{email}}</h6>
+                    <span class="text-warning"><b>user</b></span>
                 </div>
             </div>
             <div class="navbar-nav w-100">

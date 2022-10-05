@@ -9,7 +9,7 @@
             <app-header></app-header>
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4 mb-2">
-                    <div class="col-sm-6 col-xl-3">
+                    <div class="col-sm-6 col-md-7 col-xl-8 offset-xl-2 offset-md-3 offset-sm-3">
                         <div class="bg-secondary rounded  p-4" v-if="addBox">
                             <h3 class="text-center text-primary" v-for="(val,key) in title" :key="key">{{val.title}}
                             </h3>
@@ -60,11 +60,17 @@
                             </form>
                         </div>
                     </div>
+                   
+                </div>
+            </div>
+
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4 mb-2">
                     <div class="col-sm-6 col-xl-3" v-for="(val,key) in subTitle" :key="key">
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <div>
                                 <div class="">
-                                    <h6>{{key+1}}. {{val.subTitle}}<span class=" float-end"><button type="button"
+                                    <h6 class="text-primary">{{key+1}}. {{val.subTitle}}<span class=" float-end"><button type="button"
                                                 class="btn btn-square btn-sm btn-outline-success ms-2" :id="val.id"
                                                 @click="noteEdit"><i class="fas fa-edit"></i></button><button
                                                 type="button" class="btn btn-square btn-sm btn-outline-primary ms-2"
@@ -73,11 +79,11 @@
                                 </div>
                                 <div class="form-group mt-3">
                                     <label for="">userid/email</label>
-                                    <input type="text" class="form-control bg-dark" :value="val.text" readonly>
+                                    <input type="text" class="form-control bg-dark text-primary" :value="val.text" readonly>
                                 </div>
                                 <div class="form-group" style="position:relative">
                                     <label for="">password</label>
-                                    <input :type="typePassword" class="form-control bg-dark" :value="val.password"
+                                    <input :type="typePassword" class="form-control bg-dark text-primary" :value="val.password"
                                         readonly>
                                     <i class="fas fa-eye text-success"
                                         style="position:absolute; left:88%; bottom:18%; cursor: pointer;"
